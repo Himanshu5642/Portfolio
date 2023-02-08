@@ -1,0 +1,147 @@
+#home {
+  width: 100%;
+  margin: 180px auto 130px;
+  display: flex;
+}
+
+.home_desc {
+  flex: 2;
+  padding-left: 100px;
+  /* background: linear-gradient(to left, transparent 0%, #fff 5%, #fff 100%); */
+  height: 305px;
+}
+
+.home_img {
+  flex: 1;
+}
+
+.img_background {
+  background-color: gray;
+  width: 280px;
+  height: 260px;
+  position: absolute;
+  top: 190px;
+  border-radius: 50px;
+  z-index: -1;
+  box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(19, 18, 18, 0.3) -10px 10px,
+    rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px,
+    rgba(0, 0, 0, 0.05) -25px 25px;
+}
+
+.name_Home {
+  transform: skew(-10deg);
+  font-weight: 650;
+}
+
+.home_logo {
+  width: 250px;
+  position: relative;
+  top: 30px;
+  left: 50px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.description_home {
+  font-size: 20px;
+}
+
+.home_btn {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.home_btn:hover {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-out;
+}
+
+@media screen and (max-width: 1000px) {
+  #home {
+    margin: 180px auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_desc {
+    flex: 1;
+    margin-right: 150px;
+    /* background: none; */
+  }
+  .img_background {
+    width: 25%;
+    height: 230px;
+  }
+  .home_logo {
+    width: 220px;
+    top: 5px;
+    left: 40px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #home {
+    flex-direction: column;
+    row-gap: 1rem;
+    margin: 120px auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .img_background {
+    width: 230px;
+    height: 230px;
+    top: 390px;
+  }
+  .home_logo {
+    width: 210px;
+    top: 10px;
+    left: 50px;
+  }
+  .home_btn {
+    font-size: 16px;
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #home {
+    margin: 100px auto;
+  }
+  .home_desc {
+    padding: 10px 50px;
+  }
+  .img_background {
+    width: 220px;
+    height: 220px;
+    top: 390px;
+  }
+  .home_logo {
+    width: 210px;
+  }
+  .home_btn {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .name_Home {
+    font-size: 20px;
+  }
+  .Career_home {
+    font-size: 16px;
+  }
+  .description_home {
+    font-size: 14px;
+  }
+  .img_background {
+    width: 180px;
+    height: 170px;
+    top: 380px;
+  }
+  .home_logo {
+    width: 160px;
+    top: 10px;
+    left: 40px;
+  }
+}
